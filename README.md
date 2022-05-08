@@ -9,8 +9,8 @@ Gathering data from an API is more practical and efficient than gathering data d
 *DataSources*: CitiPy Module,APIs,JSON Traversals,Python requests,SciPy<br>
 *Software used*: Jupyter Notebook 6.4.5.<br> 
 *Libraries*: Panda,Matplotlib <br>
-*Language*: Python 3.9.7. 
-*Generated CSV Files*:  [Weather_Database.csv](https://github.com/fathi129/World_Weather_Analysis/blob/master/Weather_Database/WeatherPy_Database.csv), [WeatherPy_vacation.csv](https://github.com/fathi129/World_Weather_Analysis/blob/master/Vacation_Search/WeatherPy_vacation.csv)
+*Language*: Python 3.9.7 <br>
+*Generated CSV Files*:  [Weather_Database.csv](https://github.com/fathi129/World_Weather_Analysis/blob/master/Weather_Database/WeatherPy_Database.csv), [WeatherPy_vacation.csv](https://github.com/fathi129/World_Weather_Analysis/blob/master/Vacation_Search/WeatherPy_vacation.csv)<br>
 
 ## Purpose of Analysis
 The Purpose of this analysis is to retrieve the data from the website through an API call,store the data,plot the graph using matplotlib and google maps and perform various statistical analysis.Based upon the collected data,we need to suggest the cities for the user weather preference and then we need to suggest the hotels and travel route for the cities.
