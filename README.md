@@ -1,56 +1,55 @@
 # World_Weather_Analysis
-PlanMyTrip is a top travel company that specializes in internet related services in the Hotel and Loding Industry.
-Jack,head of User Interface team wants us to collect weather data for random cities and suggest the hotels for the customers based on their weather preference.
+PlanMyTrip is a top travel company specializing in internet-related services in the Hotel and Lodging Industry. Jack, head of the User Interface team, wants us to collect weather data for random cities and suggest the hotels for the customers based on their weather preferences.
 
 ## Overview of Analysis
-Gathering data from an API is more practical and efficient than gathering data directly from the web.When an API request is made,the data is returned in various formats.The most popular one is JSON format.It stores data as key value pair so it is easy to retrieve the data.In order to generate latitudes and longitudes,Pandas `random()` function is used,To collect weather data from cities,CitiPy Module has been used.Some of the statistical analysis has been peformed based on the latitude and various weather parameters and linear regression was used.
+Gathering data from an API is more practical and efficient than collecting data directly from the web. When an API request is made, the data is returned in various formats. The most popular one is the JSON format. It stores data as key-value pairs, so it is easy to retrieve the data. To generate latitudes and longitudes,Pandas `random()` function is used, To collect weather data from cities, CitiPy Module has been used. Some statistical analysis has been performed based on the latitude, and various weather parameters and linear regression lines and equations were generated.
+
 
 ## Resources Used
-*DataSources*: CitiPy Module,APIs,JSON Traversals,Python requests,SciPy<br>
+*DataSources*: CitiPy Module, APIs, JSON Traversals, Python requests, SciPy<br>
 *Software used*: Jupyter Notebook 6.4.5.<br> 
-*Libraries*: Panda,Matplotlib <br>
+*Libraries*: Panda, Matplotlib <br>
 *Language*: Python 3.9.7 <br>
 *Generated CSV Files*:  [Weather_Database.csv](https://github.com/fathi129/World_Weather_Analysis/blob/master/Weather_Database/WeatherPy_Database.csv), [WeatherPy_vacation.csv](https://github.com/fathi129/World_Weather_Analysis/blob/master/Vacation_Search/WeatherPy_vacation.csv)<br>
 
 ## Purpose of Analysis
-The Purpose of this analysis is to retrieve the data from the website through an API call,store the data,plot the graph using matplotlib and google maps and perform various statistical analysis.Based upon the collected data,we need to suggest the cities for the user weather preference and then we need to suggest the hotels and travel route for the cities.
+This analysis aims to retrieve the data from the website through an API call, store the data, plot the graph using matplotlib and google maps, and perform various statistical analysis. Based on the collected data, we need to suggest the cities for the user's weather preference, and then we need to recommend the hotels and travel routes for the cities.
 
 ## Weather Database
-A random set of 2000 latitudes and longitudes are generated using Pandas `random()` function.For the generated coordinates,the nearest city is found using the Python's CitiPy module.The cities list is created.For the generated cities we need to collect the weather information,to do this we use OpenWeatherMap API.An API request is performed and the response is retrieved as JSON.The required weather parameters were retrieved and stored as Data Frame.The data frame is exported as CSV file.<br>
+A random set of 2000 latitudes and longitudes are generated using Pandas random() function. The nearest city is found using the Python's CitiPy module for the generated coordinates and the cities list is created. For the developed cities, we need to collect the weather information, to do this, we use OpenWeatherMap API. An API request is performed and the response is retrieved as JSON. The required weather parameters were retrieved and stored as Data Frame. The data frame is exported as CSV file.
 - Latitude and Longitude
 - Percent Humidity
 - Maximum Temperature
 - Percent Cloudiness
 - Wind Speed
-- Country,City,Weather Description<br>
+- Country,City,Weather Description <br>
 
 <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/Weather_Database/Weather_Database.png" width = 900><br>
 
 ## Vacation Search
-The generated weather database CSV file is read, Based on traveler’s weather preferences,they can identify travel destinations and nearby hotels. Using Googles Places API,the hotel are retrieved for the nearest cities.The map showcases destinations on a marker layer map using pop-up markers.<br>
+Using the generated weather database CSV file, travelers can identify travel destinations and nearby hotels based on their weather preferences. Using Googles Places API, the hotels are retrieved for the nearest cities. The map showcases destinations on a marker layer map using pop-up markers.<br>
 
 <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/Vacation_Search/Hotel_info.png" width = 900><br>
-The heat disspipating map is also generated by adding the heat layer and including the temperature in it.<br>
+The heat dissipating map is also generated by adding the heat layer and including its temperature.<br>
 <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/Practice/Heat%20dissipation.png" width = 900><br>
 <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/Vacation_Search/WeatherPy_vacation_map.png" width = 900><br>
 
 ## Vacation Itinerary
-From the map,the user has chosen 4 cities for the vacation itinerary which has temperature in between 75 and 90 and they are nearby.The cities are
-Ken Caryl,Ridgecrest,Port Hueneme,Show Low.Using the Google Directions API,a travel itinerary is created,that shows the route between four cities chosen from the customers possible travel destinations.
-
+The user has chosen four cities for the vacation itinerary from the map, with temperatures between 75 and 90 nearby. The cities are Ken Caryl, Ridgecrest, Port Hueneme, and Show Low. A travel itinerary shows the route between four cities chosen from the customer's possible travel destinations using the Google Directions API.<br>
 <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/Vacation_Itinerary/WeatherPy_travel_map.png" width = 900><br>
 
-Then a marker layer map with a pop-up marker for each city in the itinerary is created.
+Then a marker layer map with a pop-up marker for each city in the itinerary is created. 
 <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/Vacation_Itinerary/WeatherPy_travel_map_markers.png" width = 900><br>
 
 ## Statistical Analysis
-Some of the statistical Analysis were also performed based on the latitude and different weather parameters and Scatter plots were plotted.Based on the latitude we can say how the weather changes in various places.
+Statistical analyses were also performed based on the latitude and different weather parameters, and Scatter plots were plotted. We can say how the weather changes in various places based on the latitude.
 |                                               |                                          |
 |  ---------------------------------------      |    --------------------------------------|
 |  <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig1.png" width = 600><br> |  <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig2.png" width = 600><br> |
 |<img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig3.png" width = 600><br>|<img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig4.png" width = 600><br>|
 
-The correlation between the two variables are determined using linear regression lines and equations.Based on the generated r-values,we can say how the temperature changes when we approach to the equator and we move further away.
+The correlation between the two variables is determined using linear regression lines and equations. Based on the generated r-values, we can say how the temperature changes when we approach the equator and move further away. The correlation between the latitude and the maximum temperature is strong because the r-value is less than –0.7 for the Northern Hemisphere and more significant than 0.7 for the Southern Hemisphere, as shown by the plots here. As we approach the equator, 0° latitude, the temperatures become warmer. And when we are further from the equator, the temperatures become cooler. 
+
 
 |                                               |                                          |
 |  ---------------------------------------      |    --------------------------------------|
