@@ -43,18 +43,19 @@ Then a marker layer map with a pop-up marker for each city in the itinerary is c
 
 ## Statistical Analysis
 Statistical analyses were also performed based on the latitude and different weather parameters, and Scatter plots were plotted. We can say how the weather changes in various places based on the latitude.
-|                                               |                                          |
+|                                    |                                                     |
 |  ---------------------------------------      |    --------------------------------------|
 |  <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig1.png" width = 600><br> |  <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig2.png" width = 600><br> |
 |<img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig3.png" width = 600><br>|<img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig4.png" width = 600><br>|
 
 The correlation between the two variables is determined using linear regression lines and equations. Based on the generated r-values, we can say how the temperature changes when we approach the equator and move further away. The correlation between the latitude and the maximum temperature is strong because the r-value is less than –0.7 for the Northern Hemisphere and more significant than 0.7 for the Southern Hemisphere, as shown by the plots here. As we approach the equator, 0° latitude, the temperatures become warmer. And when we are further from the equator, the temperatures become cooler. 
 
+|                                               |                                                                                                        |
+|  ---------------------------------------      |    ----------------------------------------------------------------------------------------------------|
+|<img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/Practice/Linear%20regression%20Screenshots/NH_Maxtemp.png" width = 600><br> |  <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/Practice/Linear%20regression%20Screenshots/SH_MaxTemp.png" width = 600><br> |
+|<img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/Practice/Linear%20regression%20Screenshots/NH_Humidity.png" width = 600><br>|<img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/Practice/Linear%20regression%20Screenshots/SH_Humidity.png" width = 600><br> |
 
-|                                               |                                          |
-|  ---------------------------------------      |    --------------------------------------|
-|  <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig1.png" width = 600><br> |  <img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig2.png" width = 600><br> |
-|<img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig3.png" width = 600><br>|<img src = "https://github.com/fathi129/World_Weather_Analysis/blob/master/weather_data/Fig4.png" width = 600><br>|
+
 
 
 
